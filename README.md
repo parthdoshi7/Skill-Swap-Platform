@@ -1,7 +1,6 @@
 # SkillSwap-Platform
 
-A full-stack web application that connects freelancers with clients, facilitating project creation, bidding, collaboration, and secure payments.
-
+A full-stack web application that connects ODOO Hackathon. 
 ## Features
 
 ### For Clients
