@@ -1,8 +1,10 @@
 ## Project name- Skill Swap
 
-## Team Members
- 1-Parth Doshi ##
- 2-Janvi
+## 👥 Authors
+- **Parth Doshi**  
+  Email: pmdoshi21@gmail.com
+- **Janvi Kalola**  
+  Email: janvikalola@gmail.com
 
 # 🔄 SkillSwap Platform — Backend
 
