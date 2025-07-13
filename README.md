@@ -1,118 +1,64 @@
-# SkillSwap-Platform
+## Project name- Skill Swap
 
-A full-stack web application that connects ODOO Hackathon. 
-## Features
+## Team Members
+## 1-Parth Doshi
+## 2-Janvi
 
-### For Clients
-- Create and manage projects
-- Browse qualified freelancers
-- Review project proposals and bids
-- Real-time chat with freelancers
-- Milestone-based payment system
-- Rate and review freelancers
-- Track project progress
-- Analytics dashboard
+# 🔄 SkillSwap Platform — Backend
 
-### For Freelancers
-- Professional profile management
-- Portfolio showcase
-- Skill management
-- Browse and bid on projects
-- Real-time project chat
-- Track earnings
-- Receive client reviews
-- Status tracking
+Welcome to the **SkillSwap Platform Backend** — an intelligent skill-exchange system where users can request and offer skills, match with others, and build real connections through learning and collaboration. This Node.js backend powers the logic for swap requests, matching, and user management.
 
-### General Features
-- Secure authentication system
-- Real-time notifications
-- Document management
-- Admin dashboard
-- Analytics and reporting
-- Review and rating system
+---
 
-## Technology Stack
+## 🚀 Tech Stack
 
-### Frontend
-- React.js
-- Redux for state management
-- Tailwind CSS for styling
-- Socket.io client for real-time features
-- Craco for Create React App configuration override
+- 🧠 **Node.js**
+- ⚡ **Express.js**
+- 🗃️ **MongoDB**
+- 🔐 **JWT (Authentication-ready)**
+- 🛠️ REST APIs
+- 🌐 **Frontend: React.js**
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Database)
-- Socket.io for real-time communication
-- JWT for authentication
-- Multer for file uploads
+---
 
-## Project Structure
+## 📦 Features
 
-```
-├── client/                 # Frontend React application
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── context/      # Context providers
-│   │   ├── features/     # Feature modules
-│   │   ├── pages/        # Page components
-│   │   └── utils/        # Utility functions
-│   
-├── server/                # Backend Node.js application
-│   ├── controllers/      # Route controllers
-│   ├── models/          # Database models
-│   ├── routes/          # API routes
-│   ├── middleware/      # Custom middleware
-│   ├── services/        # Business logic
-│   └── utils/          # Utility functions
-```
+- 👤 **User Account System**
+  - Create & manage user profile
+  - Fetch profile details via email
 
-## Getting Started
+- 🤝 **Skill Swap Request System**
+  - Users can offer a skill and request another
+  - Full and partial match support
 
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB
-- npm or yarn
+- 📨 **Assign Swap Requests**
+  - Assign a target user manually 
+  - If full match: both requests updated
+  - If one-way: partial match stored and waiting for confirmation
 
-### Installation
+- 📬 **Incoming Request Viewer**
+  - Assigned users can view incoming swap requests
+  - Ready to be accepted or rejected
 
-1. Clone the repository:
-```bash
-git clone  https://github.com/ahmadijaz02/SkillSwap-Platform.git
-```
+- ✅ **Accept / Reject Swaps**
+  - Target user confirms or declines match
 
-2. Install backend dependencies:
-```bash
-cd server
-npm install
-```
+- 🌐 **Explore Requests**
+  - Fetch all pending skill swap requests for browsing
 
-3. Install frontend dependencies:
-```bash
-cd client
-npm install
-```
+---
 
-4. Set up environment variables:
-Create `.env` files in both client and server directories with necessary configurations.
+## 🧪 API Endpoints
 
-### Running the Application
-
-1. Start the backend server:
-```bash
-cd server
-npm start
-```
-
-2. Start the frontend development server:
-```bash
-cd client
-npm start
-```
-
-The application will be available at `http://localhost:3000`
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/swaps/swap` | ➕ Create a new swap request |
+| `PATCH` | `/api/swaps/assign` | 🔁 Assign a swapper by matching skills |
+| `GET` | `/api/swaps/incoming?email=` | 📩 Get incoming requests assigned to a user |
+| `GET` | `/api/swaps/all` | 🌍 Browse all swap requests |
+| `GET` | `/api/swaps/mine?email=` | 🧾 View your own submitted requests |
+| `PATCH` | `/api/swaps/status` | ✅ Accept or ❌ Reject a swap (coming soon) |
+| `POST` | `/api/Login` | For Login The user |
+| `POST` | `/api/add` | For Register The user |
+| `POST` | `api/profile/:email` | For Viewing the user Profile|
+---
