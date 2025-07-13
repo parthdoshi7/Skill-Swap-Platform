@@ -2,9 +2,7 @@
 
 ## 👥 Authors
 - **Parth Doshi**  
-  Email: pmdoshi21@gmail.com
-- **Janvi Kalola**  
-  Email: janvikalola@gmail.com
+- **Janvi**  
 
 # 🔄 SkillSwap Platform — Backend
 
