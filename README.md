@@ -1,7 +1,7 @@
 ## Project name- Skill Swap
 
 ## Team Members
- 1-Parth Doshi
+ 1-Parth Doshi ##
  2-Janvi
 
 # 🔄 SkillSwap Platform — Backend
