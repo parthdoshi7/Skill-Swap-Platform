@@ -2,7 +2,7 @@
 
 ## Team Members
 ## 1-Parth Doshi
-## 2-Janvi
+ 2-Janvi
 
 # 🔄 SkillSwap Platform — Backend
 
